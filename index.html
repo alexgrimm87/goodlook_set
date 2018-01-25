@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoodLook</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container clearfix">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="">
+        </a>
+      </div>
+      <div class="admin-list">
+        <ul>
+          <li>
+            <a href="#">О сервисе</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/search.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="flag-link" href="#">
+              <img src="images/flag.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="heart-link" href="#">0</a>
+          </li>
+          <li class="email">
+            <a class="email-link" href="#">Denis@...</a>
+          </li>
+          <li>
+            <a href="#">Выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="container clearfix">
+        <ul class="main-menu">
+          <li>
+            <a href="#">Мужчинам</a>
+          </li>
+          <li>
+            <a href="#">Женщинам</a>
+          </li>
+          <li>
+            <a href="#">Детям</a>
+          </li>
+          <li>
+            <a href="#">Услуги красоты</a>
+          </li>
+        </ul>
+        <a class="sell" href="#">Продать товар</a>
+      </div>
+    </div>
+    <div class="admin-panel">
+      <div class="container clearfix">
+        <ul class="panel-list-left">
+          <li>
+            <a class="goods-link" href="#">Товары</a>
+          </li>
+          <li>
+            <a class="score-link" href="#">Счет</a>
+          </li>
+          <li>
+            <a class="deferred-link" href="#">Отложенные</a>
+          </li>
+          <li>
+            <a class="settings-link" href="#">Настройки</a>
+          </li>
+        </ul>
+        <ul class="panel-list-right">
+          <li>
+            <a class="balance" href="#">На вашем счёте <span>0,07</span> €</a>
+          </li>
+          <li>
+            <a class="fill" href="#">Пополнить</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="settings">
+    <div class="container clearfix">
+      <h2>Настройки</h2>
+      <div class="tabs">
+        <ul class="tabs-caption">
+          <li class="active">Страница продавца</li>
+          <li>Уведомления</li>
+          <li>Смена пароля</li>
+          <li class="review-link">Отзывы</li>
+        </ul>
+        <div class="tabs-content active">
+          <div class="seller-info">
+            <p class="seller-info-text">Полное и правдивое заполнение страницы продавца — самый простой способ
+            повысить доверие со стороны других пользователей сервиса. Заполните основные
+            данные о себе и загрузите фотографию, на которой хорошо видно ваше лицо.
+            </p>
+          </div>
+          <div class="view">
+            <a href="#">Посмотреть как выглядит на сайте</a>
+          </div>
+          <form action="/" id="form" method="post">
+            <div class="form-field name-field">
+              <label for="name">Имя или название магазина*</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required="required">
+            </div>
+            <span>Контакты:</span>
+            <p>Контакты отображаются на странице продавца и странице товара.</p>
+            <div class="form-field email-field">
+              <label for="email">Эл. почта*</label>
+              <input type="text" id="email" name="email" placeholder="my_male@yandex.ru" required="required">
+            </div>
+            <div class="form-field phone-field">
+              <label for="phone">Телефон:</label>
+              <input type="text" id="phone" placeholder="+7 981 7514534">
+            </div>
+            <div class="form-field skype-field">
+              <label for="skype">Skype:</label>
+              <input type="text" id="skype">
+            </div>
+            <span>Фото продавца:</span>
+            <div class="photo">
+              <img src="images/photo.png" alt="">
+            </div>
+            <div class="background-wrap">
+              <span class="background-tittle">Фоновое изображение:</span>
+              <div class="background">
+                <input class="upload" type="file" name="photo" multiple="" accept="image/*,image/jpeg">
+                <img src="images/photo.png" alt="">
+                <span class="background-text">Добавте фото</span>
+              </div>
+            </div>
+            <div class="form-field purchase-field">
+              <label for="purchase">Условие покупки:</label>
+              <textarea id="purchase"></textarea>
+              <p class="counter-wrap">Осталось <span id="purchase-counter">2500</span> символов</p>
+            </div>
+            <div class="form-field return-field">
+              <label for="return">Условия возврата:</label>
+              <textarea id="return"></textarea>
+              <p class="counter-wrap">Осталось <span id="return-counter">2500</span> символов</p>
+            </div>
+            <div class="form-field payment-field">
+              <label for="payment">Способы оплаты:</label>
+              <textarea id="payment"></textarea>
+              <p class="counter-wrap">Осталось <span id="payment-counter">2500</span> символов</p>
+            </div>
+            <span>Условие доставки:</span>
+            <div class="delivery">
+              <div class="checkbox-field personally-field">
+                <label>
+                  <input type="checkbox" id="personally" checked="checked">
+                  <span>Лично</span>
+                </label>
+              </div>
+              <p class="delivery-text">Укажите, где и когда покупатель сможет забрать товар.</p>
+              <div class="delivery-field сity-field">
+                <label for="сity">Город:</label>
+                <select id="сity">
+                  <option>Рига</option>
+                </select>
+              </div>
+              <div class="delivery-field address-field">
+                <label for="address">Адрес:</label>
+                <input type="text" id="address">
+              </div>
+              <div class="delivery-field time-field">
+                <label for="time">Время:</label>
+                <input type="text" id="time" placeholder="с 10:00 по 22:00">
+              </div>
+              <div class="checkbox-field mail-field">
+                <label>
+                  <input type="checkbox" id="mail" checked="checked">
+                  <span>По почте</span>
+                </label>
+              </div>
+              <p class="place-text">Укажите, место отправки товара</p>
+              <div class="place-field">
+                <input type="text">
+              </div>
+            </div>
+            <div class="social">
+              <div class="facebook">
+                <span>Facebook:</span>
+                <div class="checkbox-field">
+                  <label>
+                    <input type="checkbox" id="facebook" checked="checked">
+                    <span>Подключить виджет сообщества из Facebook</span>
+                  </label>
+                </div>
+              </div>
+              <div class="instagram">
+                <span>Instagram:</span>
+                <div class="checkbox-field">
+                  <label>
+                    <input type="checkbox" id="instagram" checked="checked">
+                    <span>Подключить виджет Instagram</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          <button>Сохранить</button>
+          </form>
+        </div>
+        <div class="tabs-content">tab Уведомления</div>
+        <div class="tabs-content">tab Смена пароля</div>
+        <div class="tabs-content">tab Отзывы</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container clearfix">
+      <div class="footer-list">
+        <ul class="list-left">
+          <li>
+            <a href="#">Обратная связь</a>
+          </li>
+        </ul>
+        <ul class="list-center">
+          <li>
+            <a href="#">о сервисе</a>
+          </li>
+          <li>
+            <a href="#">правила пользования сервисом</a>
+          </li>
+        </ul>
+        <ul class="list-right">
+          <li>
+            <a href="#">сотрудничество и реклама</a>
+          </li>
+          <li>
+            <a href="#">вакансии</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#">
+          <img src="images/facebook.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/instagram.png" alt="">
+        </a>
+        <p>© Goodlook. 2003-2016</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
